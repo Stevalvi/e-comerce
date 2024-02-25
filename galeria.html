@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Comerce - Galería</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!--Bootstrap siempre debe ir primero que el archivo de css-->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    
+    <header class="py-5">
+        <h1 class="text-center">Tienda<span class="text-primary"> Muebles</span></h1>
+    </header>
+
+
+    <div class="border-top py-4">
+        <div class="navbar navbar-expand-lg container navbar-light"> <!--Ese navbar le da estilos css y ese navbar-expand-lg desaparece esa barra en un dispositivo más grande, el navbar-light le da el color para poder verlo-->
+            <a class="navbar-brand nombre-sitio d-lg-none fs-2 fw-bold text-uppercase" href="index.html"> <!--Esa clase de d-lg-none es para que en un dispositivo más grande no se muestre ese a-->
+                Tienda Muebles
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion"> <!--Ese collapse va a habilitar collapse en este botón, pero lo que vamos a mostrar y ocultar lo hacemos con data-bs-target-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navegacion" class="collapse navbar-collapse"> <!--Ese collapse habilita las transicciones  -->
+                <nav class="navbar-nav container d-flex  flex-md-row justify-content-md-between text-center"> <!--Esa clase de navbar-nav nos crea una barra de navegación-->
+                    <a class="text-dark text-decoration-none" href="index.html">Inicio</a>
+                    <a class="text-dark text-decoration-none" href="nosotros.html">Nosotros</a>
+                    <a class="text-dark text-decoration-none" href="tienda.html">Tienda</a>
+                    <a class="text-dark text-decoration-none" href="blog.html">Blog</a>
+                    <a class="text-dark text-decoration-none" href="galeria.html">Galeria</a>
+                    <a class="text-dark text-decoration-none" href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <main class="container-xl py-5">
+        <h2 class="text-center my-5">Galería</h2>
+
+        <ul class="row list-unstyled galeria"> <!--Ese list-unstyled es para remover las viñetas de las listas-->
+            <li class="col-md-6 col-lg-4">
+                <a data-bs-toggle="modal" data-bs-target="#modal-imagen" data-bs-imagen="galeria_01"> <!--Recordemos que ese atributo data-bs-toggle es la que nos permite mandar a llamar de la API de bootstrap ese modal para poder usarlo, y ese data-bs-target es para poder mostrarle en que parte del html va a encontrar lo que debe mostrar en ese modal, el data-bs-imagen es un atributo que creamos nosotros siguiendo la forma como bootstrap nombra los atributos con ese -bs, y ese atributo es para poder usarlo en el javascript y poder hacer que funcione el modal al momento de dar click en cada imágen -->
+                    <img class="img-fluid" src="img/galeria_01.jpg" alt="imagen galeria">
+                </a>
+            </li>
+            <li class="col-md-6 col-lg-4">
+                <a data-bs-toggle="modal" data-bs-target="#modal-imagen" data-bs-imagen="galeria_02">
+                    <img class="img-fluid" src="img/galeria_02.jpg" alt="imagen galeria">
+                </a>
+            </li>
+            <li class="col-md-6 col-lg-4">
+                <a data-bs-toggle="modal" data-bs-target="#modal-imagen" data-bs-imagen="galeria_03">
+                    <img class="img-fluid" src="img/galeria_03.jpg" alt="imagen galeria">
+                </a>
+            </li>
+            <li class="col-md-6 col-lg-4">
+                <a data-bs-toggle="modal" data-bs-target="#modal-imagen" data-bs-imagen="galeria_04">
+                    <img class="img-fluid" src="img/galeria_04.jpg" alt="imagen galeria">
+                </a>
+            </li>
+            <li class="col-md-6 col-lg-4">
+                <a data-bs-toggle="modal" data-bs-target="#modal-imagen" data-bs-imagen="galeria_05">
+                    <img class="img-fluid" src="img/galeria_05.jpg" alt="imagen galeria">
+                </a>
+            </li>
+            <li class="col-md-6 col-lg-4">
+                <a data-bs-toggle="modal" data-bs-target="#modal-imagen" data-bs-imagen="galeria_06">
+                    <img class="img-fluid" src="img/galeria_06.jpg" alt="imagen galeria">
+                </a>
+            </li>
+            <li class="col-md-6 col-lg-4">
+                <a data-bs-toggle="modal" data-bs-target="#modal-imagen" data-bs-imagen="galeria_07">
+                    <img class="img-fluid" src="img/galeria_07.jpg" alt="imagen galeria">
+                </a>
+            </li>
+            <li class="col-md-6 col-lg-4">
+                <a data-bs-toggle="modal" data-bs-target="#modal-imagen" data-bs-imagen="galeria_08">
+                    <img class="img-fluid" src="img/galeria_08.jpg" alt="imagen galeria">
+                </a>
+            </li>
+            <li class="col-md-6 col-lg-4">
+                <a data-bs-toggle="modal" data-bs-target="#modal-imagen" data-bs-imagen="galeria_09">
+                    <img class="img-fluid" src="img/galeria_09.jpg" alt="imagen galeria">
+                </a>
+            </li>
+        </ul>
+    </main>
+
+    <div class="modal fade" id="modal-imagen"> <!--Esa clase de modal le va a dar los estilos, y ese fade son unos efectos-->
+        <div class="modal-dialog modal-lg modal-dialog-centered"> <!--Ese modal-dialog también agrega estilos de css, modal-lg nos crea un modal más grande y modal-dialog-centered para centrarlo-->
+            <div class="modal-content"> <!--Los modale tienen varias secciones, y para poder usar la del body debemos usar la de modal-content antes-->
+                <div class="modal-body"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="pt-5 mt-5 border-top">
+        <div class="container-xl mt-5">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0 text-center">
+                    <h3 class="mb-4">Categorías</h3>
+                    <nav class="d-flex flex-column">
+                        <a class="text-dark text-decoration-none" href="#">Cocina</a>
+                        <a class="text-dark text-decoration-none" href="#">Oficina</a>
+                        <a class="text-dark text-decoration-none" href="#">Jardín</a>
+                        <a class="text-dark text-decoration-none" href="#">Cochera</a>
+                        <a class="text-dark text-decoration-none" href="#">Dormitorios</a>
+                    </nav>
+                </div>
+
+                <div class="col-md-4 mb-4 mb-md-0 text-center">
+                    <h3 class="mb-4">Sobre Nosotros</h3>
+                    <nav class="d-flex flex-column">
+                        <a class="text-dark text-decoration-none" href="#">Nuestra Historia</a>
+                        <a class="text-dark text-decoration-none" href="#">Misión, Visión y Valores</a>
+                        <a class="text-dark text-decoration-none" href="#">Carreras</a>
+                        <a class="text-dark text-decoration-none" href="#">Políticas de Privacidad</a>
+                        <a class="text-dark text-decoration-none" href="#">Términos del Servicio</a>
+                    </nav>
+                </div>
+
+                <div class="col-md-4 mb-4 mb-md-0 text-center">
+                    <h3 class="mb-4">Soporte</h3>
+                    <nav class="d-flex flex-column">
+                        <a class="text-dark text-decoration-none" href="#">Preguntas Frecuentes</a>
+                        <a class="text-dark text-decoration-none" href="#">Ayuda en linea</a>
+                        <a class="text-dark text-decoration-none" href="#">Confianza y Seguridad</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p class="mt-5 text-center fs-2">Todos los derechos reservados. TiendaMuebles</p>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

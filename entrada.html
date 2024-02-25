@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Comerce - Entrada de Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!--Bootstrap siempre debe ir primero que el archivo de css-->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    
+    <header class="py-5">
+        <h1 class="text-center">Tienda<span class="text-primary"> Muebles</span></h1>
+    </header>
+
+
+    <div class="border-top py-4">
+        <div class="navbar navbar-expand-lg container navbar-light"> <!--Ese navbar le da estilos css y ese navbar-expand-lg desaparece esa barra en un dispositivo más grande, el navbar-light le da el color para poder verlo-->
+            <a class="navbar-brand nombre-sitio d-lg-none fs-2 fw-bold text-uppercase" href="index.html"> <!--Esa clase de d-lg-none es para que en un dispositivo más grande no se muestre ese a-->
+                Tienda Muebles
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion"> <!--Ese collapse va a habilitar collapse en este botón, pero lo que vamos a mostrar y ocultar lo hacemos con data-bs-target-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navegacion" class="collapse navbar-collapse"> <!--Ese collapse habilita las transicciones  -->
+                <nav class="navbar-nav container d-flex  flex-md-row justify-content-md-between text-center"> <!--Esa clase de navbar-nav nos crea una barra de navegación-->
+                    <a class="text-dark text-decoration-none" href="index.html">Inicio</a>
+                    <a class="text-dark text-decoration-none" href="nosotros.html">Nosotros</a>
+                    <a class="text-dark text-decoration-none" href="tienda.html">Tienda</a>
+                    <a class="text-dark text-decoration-none" href="blog.html">Blog</a>
+                    <a class="text-dark text-decoration-none" href="galeria.html">Galeria</a>
+                    <a class="text-dark text-decoration-none" href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <main class="container-xl py-5">
+        <h2 class="text-center my-5">Guía de Colores</h2>
+
+        <div class="row justify-content-md-center">
+            <article class="col-md-8">
+                    <img class="img-fluid" src="img/nosotros.jpg" alt="imagen blog">
+
+                    <div class="d-flex flex-column flex-md-row justify-content-md-between py-4">
+                        <p class="fw-bold">Fecha: <span class="text-primary">22 de Octubre del 2024</span></p>
+                        <p class="fw-bold">Escrito por: <span class="text-primary">TiendaMuebles</span></p>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, nobis corrupti odit iste sit est incidunt alias enim a voluptatem asperiores blanditiis minima repudiandae perferendis numquam soluta molestiae maxime minus!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, quibusdam! Obcaecati reiciendis itaque enim nemo quos, incidunt dolor debitis quam nostrum cupiditate sint facilis ut nulla iusto repellat mollitia dolorem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, nobis corrupti odit iste sit est incidunt alias enim a voluptatem asperiores blanditiis minima repudiandae perferendis numquam soluta molestiae maxime minus!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, quibusdam! Obcaecati reiciendis itaque enim nemo quos, incidunt dolor debitis quam nostrum cupiditate sint facilis ut nulla iusto repellat mollitia dolorem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, nobis corrupti odit iste sit est incidunt alias enim a voluptatem asperiores blanditiis minima repudiandae perferendis numquam soluta molestiae maxime minus!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, quibusdam! Obcaecati reiciendis itaque enim nemo quos, incidunt dolor debitis quam nostrum cupiditate sint facilis ut nulla iusto repellat mollitia dolorem.</p>
+            </article>
+        </div>
+    </main>
+
+
+    <footer class="pt-5 mt-5 border-top">
+        <div class="container-xl mt-5">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0 text-center">
+                    <h3 class="mb-4">Categorías</h3>
+                    <nav class="d-flex flex-column">
+                        <a class="text-dark text-decoration-none" href="#">Cocina</a>
+                        <a class="text-dark text-decoration-none" href="#">Oficina</a>
+                        <a class="text-dark text-decoration-none" href="#">Jardín</a>
+                        <a class="text-dark text-decoration-none" href="#">Cochera</a>
+                        <a class="text-dark text-decoration-none" href="#">Dormitorios</a>
+                    </nav>
+                </div>
+
+                <div class="col-md-4 mb-4 mb-md-0 text-center">
+                    <h3 class="mb-4">Sobre Nosotros</h3>
+                    <nav class="d-flex flex-column">
+                        <a class="text-dark text-decoration-none" href="#">Nuestra Historia</a>
+                        <a class="text-dark text-decoration-none" href="#">Misión, Visión y Valores</a>
+                        <a class="text-dark text-decoration-none" href="#">Carreras</a>
+                        <a class="text-dark text-decoration-none" href="#">Políticas de Privacidad</a>
+                        <a class="text-dark text-decoration-none" href="#">Términos del Servicio</a>
+                    </nav>
+                </div>
+
+                <div class="col-md-4 mb-4 mb-md-0 text-center">
+                    <h3 class="mb-4">Soporte</h3>
+                    <nav class="d-flex flex-column">
+                        <a class="text-dark text-decoration-none" href="#">Preguntas Frecuentes</a>
+                        <a class="text-dark text-decoration-none" href="#">Ayuda en linea</a>
+                        <a class="text-dark text-decoration-none" href="#">Confianza y Seguridad</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <p class="mt-5 text-center fs-2">Todos los derechos reservados. TiendaMuebles</p>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
